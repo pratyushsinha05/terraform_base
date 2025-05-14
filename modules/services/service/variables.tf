@@ -1,0 +1,12 @@
+variable "service_name"     { type = string }
+variable "vpc_id"           { type = string }
+variable "public_subnets"   { type = list(string) }
+variable "private_subnets"  { type = list(string) }
+variable "alb_sg_id"        { type = string }
+variable "instance_profile" { type = string }
+variable "instance_ami"     { type = string }
+variable "instance_type"    { type = string }
+variable "desired_capacity" { type = number }
+variable "max_size"         { type = number }
+variable "app_port"         { type = number }
+variable "docker_image_url" { type = string }
